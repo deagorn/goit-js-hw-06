@@ -6,8 +6,8 @@ const dataLengthValue = validationInput.dataset.length;
 
 
 function onInputValidation(event) {
- 
-    if (event.currentTarget.value.length==dataLengthValue) {
+    
+    if (event.currentTarget.value.length===Number(dataLengthValue)) {
         validationInput.classList.remove("invalid");
         validationInput.classList.add("valid");
     }
